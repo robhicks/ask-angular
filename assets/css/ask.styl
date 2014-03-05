@@ -1,0 +1,206 @@
+.top_menu{
+  margin-top 8px
+  position relative
+  .ddleft{
+    width 144px
+    height 36px
+    line-height 36px
+    background-color rgb(211, 230, 185)
+    text-shadow 0px 1px #FFFFFF;
+    font-size 110%
+    text-align center
+    float left
+    border-radius 2px 0px 0px 2px
+    cursor pointer
+    a{
+      display inline-block
+      width 144px
+      height 36px
+      color inherit
+      &:hover{
+        text-decoration none
+      }
+    }
+  }
+  .ddright{
+    margin-left 2px
+    height 36px
+    width 36px
+    float left
+    border-radius 0px 2px 2px 0px
+    cursor pointer
+    &.closed{
+      background rgb(211,230,185) url("triangle_sprite.png") no-repeat left center
+    }
+    &.opened{
+      background rgb(211,230,185) url("triangle_sprite.png") no-repeat right center
+    }
+  }
+  .dddown{
+    position absolute
+    z-index 1000
+    top 36px
+    left 0
+    ul{
+      list-style none
+      margin 0
+      width 180px
+      border-right 1px solid rgb(204,204,204)
+      border-left 1px solid rgb(204,204,204)
+      border-radius 0px 0px 2px 2px
+      box-shadow rgba(0, 0, 0, 0.2) 0px 3px 5px -2px
+      li{
+        height 36px
+        border-bottom 1px solid rgb(204,204,204)
+        background-color rgb(255, 255, 255)
+        &:hover{
+          background-color rgb(211, 230, 185)
+          cursor pointer
+          text-shadow 0px 1px rgb(255,255,255)
+        }
+        &:hover:first-child{
+          border-top 1px solid rgb(204,204,204)
+        }
+        a{
+          display inline-block
+          height 36px
+          width 176px
+          padding 8px
+          color inherit
+          &:hover{
+            text-decoration none
+          }
+        }
+      }
+    }
+  }
+}
+
+#main_banner{
+  height 343px
+  border-top 4px solid rgb(235, 235, 235)
+  background url("kids_and_sheep.jpg") no-repeat
+  .text_container{
+    background-image url('green_background.png')
+    height 126px
+    margin-top 72px
+    .text{
+      padding-left 12px
+      h3{
+        color rgb(255, 255, 255, 1)
+        line-height 1.5em
+        z-index 100
+        text-shadow 0px 1px rgb(128,128,128)
+        opacity 1
+        }
+      }
+    }
+  }
+
+  .ask_lg_icons{
+    margin-top 36px
+    div{
+      height 124px
+      font-size 1.1 em
+      border 1px solid rgb(204,204,204)
+      border-radius 6px
+      text-align center
+      a{
+        padding-top 82px
+        display inline-block
+        height 124px
+        color inherit
+        &:hover{
+          text-decoration none
+        }
+      }
+      &.tree{
+        background url("tree.png") no-repeat center 20%
+      }
+      &.memories {
+        background url("memories.png") no-repeat center 20%
+      }
+      &.search {
+        background url("search.png") no-repeat center 20%
+      }
+      &.indexing {
+        background url("indexing.png") no-repeat center 20%
+      }
+      &.temple {
+        background url("temple.png") no-repeat center 20%
+      }
+      &.partners {
+        background url("partners.png") no-repeat center 20%
+        /*border none*/
+      }
+    }
+  }
+
+  .ask_highlighted{
+    margin 36px 0px 48px 0px
+    text-align left
+    div{
+      height 140px
+      .inner{
+        background-color rgb(246, 246, 246)
+        background-position left
+        padding 24px
+        a{
+          color inherit
+          &:hover{
+            text-decoration none
+          }
+        }
+      }
+    }
+}
+
+.page{
+  border-top 4px solid rgb(235, 235, 235)
+  padding-top 24px
+  p{
+    font-size 1.1em
+    line-height 1.2em
+  }
+  ul{
+    list-style none
+    margin-left 0
+    li{
+      font-size 1.1em
+      margin 16px 0px
+    }
+  }
+  .panel-header{
+    background-color rgb(204,204,204)
+    margin 24px 0px
+    padding-left 16px
+    h2{
+      margin 4px 0px
+      text-shadow 0px 1px rgb(255,255,255)
+    }
+    .toggler{
+      margin-right 20px
+      margin-top 12px
+      width 24px
+      height 24px
+      cursor pointer
+      &.opened{
+        background url('toggler_sprite.png') no-repeat left center
+      }
+      &.closed{
+        background url('toggler_sprite.png') no-repeat right center
+      }
+    }
+  }
+  .panel-search-results{
+    border-top 1px solid rgb(204,204,204)
+  }
+}
+
+form.form{
+  .input-append{
+    input{
+      padding 18px 8px !important
+    }
+  }
+}

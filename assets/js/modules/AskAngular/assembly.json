@@ -1,0 +1,10 @@
+{
+   "files": [
+      "angular-ui-router.js",
+      "router.js",
+      "MainCtrl.js",
+      "TreeCtrl.js",
+      "topMenuDir.js",
+      "main.js"
+   ]
+}

@@ -1,0 +1,21 @@
+<div class="row-fluid">
+    <div class="span12">
+        <div class="top_menu">
+            <div class="ddleft" data-ng-click="main.showSecondaryNav = false"><a ui-sref="ask">HELP CENTER</a></div>
+            <div class="ddright" data-ng-click="main.showSecondaryNav = !main.showSecondaryNav" data-ng-class="{opened: main.showSecondaryNav, closed: !main.showSecondaryNav}"></div>
+            <div class="dddown" data-ng-if="main.showSecondaryNav == true" data-ng-click="main.showSecondaryNav = false">
+                <ul>
+                    <li><a ui-sref="tree">Family Tree</a></li>
+                    <li><a ui-sref="memories">Memories</a></li>
+                    <li><a ui-sref="search">Search</a></li>
+                    <li><a ui-sref="indexing">Indexing</a></li>
+                    <li><a ui-sref="temple">Temple</a></li>
+                    <li><a ui-sref="partner">Partner</a></li>
+                    <li><a ui-sref="fsAccount">FamilySearch Account</a></li>
+                    <li><a ui-sref="genealogyAssistance">Genealogy Assistance</a></li>
+                    <li><a ui-sref="fsCenter">FamilySearch Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
